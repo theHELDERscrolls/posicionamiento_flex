@@ -10,9 +10,14 @@
   color: black;
 }
 
+body {
+  background-color: rgb(209, 209, 209);
+  background-image: url(./assets/images/background/60-lines.png);
+}
+
 header {
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -27,12 +32,12 @@ header {
 }
 
 header > img {
-  width: 5rem;
+  width: 3rem;
   filter: drop-shadow(2px 2px 2px #0009);
 }
 
 .drop {
-  width: 3rem;
+  width: 2rem;
   filter: drop-shadow(2px 2px 2px #0009);
 }
 
@@ -139,7 +144,6 @@ span {
 .sea {
   width: 100%;
   padding: 0.5rem;
-  border: 2px solid red;
   position: sticky;
 }
 
@@ -189,7 +193,6 @@ span {
 /* Listas de unidades */
 
 #army {
-  background-color: ivory;
   padding: 1rem;
   font-size: 1.3rem;
   display: flex;
@@ -221,10 +224,9 @@ span {
   min-width: 23.5rem;
   min-height: 23.5rem;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  background-color: #002;
+  background-color: #001;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #0009;
 }
@@ -276,5 +278,67 @@ span {
 @media screen and (min-width: 700px) {
   #army img {
     width: 50%;
+  }
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: ivory;
+  background-image: url(./assets/images/background/green-dust-and-scratches.png);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 5px -5px 5px #0009;
+}
+
+footer > div {
+  width: 45%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer > div > img {
+  width: 5rem;
+}
+
+footer > div > a {
+  font-weight: bold;
+}
+
+.social {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.social img {
+  padding: 0.3rem;
+  width: 5rem;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px #0009;
+  filter: grayscale(100%);
+  transition: all ease-in-out 0.3s;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+@media screen and (min-width: 700px) {
+  .social {
+    flex-direction: row;
   }
 }
